@@ -1,5 +1,3 @@
-
-
 function funcionHTML (elemento,texto) {
 
     let elementoHTML = document.querySelector(elemento);
@@ -7,3 +5,13 @@ function funcionHTML (elemento,texto) {
     return;
 
 }
+
+function condicionesIniciales() {
+
+    funcionHTML("p","Ingrese el texto que desee encriptar o desencriptar.");
+
+    return;
+
+}
+
+condicionesIniciales();

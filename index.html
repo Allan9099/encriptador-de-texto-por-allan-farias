@@ -7,15 +7,31 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header></header>
-    <main>
-        <h1>
-            
-        </h1>
+    <header class="encabezado">
 
-
+        <img class="encabezado__logo" src="./assets/Alura-min.png" alt='logo de Alura minimalista, solo la "a"'>
+        
+    </header>
+    <main class="cuerpo">
+        <section class="cuerpo__seccionUsuario">
+            <textarea type="text" class="cuerpo__seccionUsuario__texto" id="texto" placeholder="Ingrese el texto aqui"></textarea>
+            <a class="cuerpo__seccionUsuario__advertencia">
+                <img src="./assets/Small-warning.png">
+                Solo letras minusculas, no acentos, numeros o simbolos.
+            </a>
+            <div class="cuerpo__seccionUsuario__botones">
+                <button class="cuerpo__seccionUsuario__boton" id="encriptar">Encriptar</button>
+                <button class="cuerpo__seccionUsuario__boton" id="desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="cuerpo__seccionResultado">
+            <img src="./assets/imagen-encriptador.png">
+            <h1 class="cuerpo__seccionResultado__resultado"><strong class="bold">Ningun mensaje fue encontrado</strong></h1>
+            <p class="cuerpo__seccionResultado__intruccion"></p>
+        </section>
 
     </main>
     <footer></footer>
+    <script src="app.js"></script>
 </body>
 </html>
