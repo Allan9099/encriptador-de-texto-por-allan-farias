@@ -7,27 +7,23 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header class="encabezado">
-
-        <img class="encabezado__logo" src="./assets/Alura-min.png" alt='logo de Alura minimalista, solo la "a"'>
-        
-    </header>
     <main class="cuerpo">
         <section class="cuerpo__seccionUsuario">
-            <textarea type="text" class="cuerpo__seccionUsuario__texto" id="texto" placeholder="Ingrese el texto aqui"></textarea>
-            <a class="cuerpo__seccionUsuario__advertencia">
-                <img src="./assets/Small-warning.png">
-                Solo letras minusculas, no acentos, numeros o simbolos.
-            </a>
+            <img class="encabezado__logo" src="./assets/Alura-min.png" alt='logo de Alura minimalista, solo la "a"'>
+            <textarea type="text" class="cuerpo__seccionUsuario__texto" id="texto" placeholder="Ingrese el texto aqui">Lorem ipsum dolor sit amet consectetur adipisicing elit Quis laudantium magnam placeat libero id aliquid minus quae tempora nesciunt doloremque molestiae totam at tenetur itaque ex nemo rem officia voluptatum Lorem ipsum dolor sit amet consectetur adipisicing elit Est inventore eligendi Quaerat est maxime neque ab inventore delectus nam perspiciatis ipsam voluptas asperiores facere saepe veniam quis sint nihil exercitationem</textarea>
             <div class="cuerpo__seccionUsuario__botones">
+                <a class="cuerpo__seccionUsuario__advertencia">
+                    <img src="./assets/Small-warning.png">
+                    Solo letras minúsculas, no acentos, números o símbolos.
+                </a>
                 <button class="cuerpo__seccionUsuario__boton" id="encriptar">Encriptar</button>
                 <button class="cuerpo__seccionUsuario__boton" id="desencriptar">Desencriptar</button>
             </div>
         </section>
         <section class="cuerpo__seccionResultado">
-            <img src="./assets/imagen-encriptador.png">
+            <img class="imagen" src="./assets/imagen-encriptador.png">
             <h1 class="cuerpo__seccionResultado__resultado"><strong class="bold">Ningun mensaje fue encontrado</strong></h1>
-            <p class="cuerpo__seccionResultado__intruccion"></p>
+            <p class="cuerpo__seccionResultado__instruccion"></p>
         </section>
 
     </main>
