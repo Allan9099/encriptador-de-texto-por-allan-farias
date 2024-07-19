@@ -44,6 +44,7 @@
 
 body {
 
+    width: 100%;
     background-color: var(--color-1);
     box-sizing: border-box;
     padding: 2%;
@@ -96,7 +97,14 @@ body {
 
 }
 
-.cuerpo__seccionUsuario__advertencia {
+.cuerpo__seccionUsuario__botonera {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cuerpo__seccionUsuario__botonera__mensaje__advertencia {
 
     position: relative;
     left: 2%;
@@ -108,14 +116,14 @@ body {
 
 }
 
-.cuerpo__seccionUsuario__botones {
+.cuerpo__seccionUsuario__botonera__botones {
 
-    width: 100%;
-    justify-content: space-between;
+    display: flex;
+    gap: 24px;
 
 }
 
-.cuerpo__seccionUsuario__boton {
+.cuerpo__seccionUsuario__botonera__botones__boton {
 
     font-size: var(--tamaño-fuente-parrafos-pequeños);
     width: 328px;

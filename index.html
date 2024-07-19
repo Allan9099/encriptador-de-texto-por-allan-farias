@@ -10,14 +10,18 @@
     <main class="cuerpo">
         <section class="cuerpo__seccionUsuario">
             <img class="encabezado__logo" src="./assets/Alura-min.png" alt='logo de Alura minimalista, solo la "a"'>
-            <textarea type="text" class="cuerpo__seccionUsuario__texto" id="texto" placeholder="Ingrese el texto aqui">Lorem ipsum dolor sit amet consectetur adipisicing elit Quis laudantium magnam placeat libero id aliquid minus quae tempora nesciunt doloremque molestiae totam at tenetur itaque ex nemo rem officia voluptatum Lorem ipsum dolor sit amet consectetur adipisicing elit Est inventore eligendi Quaerat est maxime neque ab inventore delectus nam perspiciatis ipsam voluptas asperiores facere saepe veniam quis sint nihil exercitationem</textarea>
-            <div class="cuerpo__seccionUsuario__botones">
-                <a class="cuerpo__seccionUsuario__advertencia">
-                    <img src="./assets/Small-warning.png">
-                    Solo letras minúsculas, no acentos, números o símbolos.
-                </a>
-                <button class="cuerpo__seccionUsuario__boton" id="encriptar">Encriptar</button>
-                <button class="cuerpo__seccionUsuario__boton" id="desencriptar">Desencriptar</button>
+            <textarea type="text" class="cuerpo__seccionUsuario__texto" id="texto" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="cuerpo__seccionUsuario__botonera">
+                <div class="cuerpo__seccionUsuario__botonera__mensaje">
+                    <a class="cuerpo__seccionUsuario__botonera__mensaje__advertencia">
+                        <img src="./assets/Small-warning.png">
+                        Solo letras minúsculas, no acentos, números o símbolos.
+                    </a>
+                </div>
+                <div class="cuerpo__seccionUsuario__botonera__botones">
+                    <button class="cuerpo__seccionUsuario__botonera__botones__boton" id="encriptar">Encriptar</button>
+                    <button class="cuerpo__seccionUsuario__botonera__botones__boton" id="desencriptar">Desencriptar</button>
+                </div>
             </div>
         </section>
         <section class="cuerpo__seccionResultado">
@@ -27,7 +31,6 @@
         </section>
 
     </main>
-    <footer></footer>
     <script src="app.js"></script>
 </body>
 </html>
