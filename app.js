@@ -1,6 +1,7 @@
 let textoUsuario = "";
 let letrasTextoUsuario = [];
 let textoNuevo = "";
+let codificacion = [];
 
 function funcionHTML (elemento,texto) {
 
@@ -14,6 +15,7 @@ function condicionesIniciales() {
 
     funcionHTML("p","Ingrese el texto que desee encriptar o desencriptar.");
 
+
     return;
 
 }
@@ -22,20 +24,19 @@ function logicaEncriptado() {
 
     textoUsuario = document.getElementById("texto").value;
 
-    letrasTextoUsuario = textoUsuario.split("");
+    if (textoUsuario.match(/[^a-z\s]/)) {
 
-    /*console.log(`este es el texto original: "${textoUsuario}"`)
-    console.log(`este es el texto por sus letras: "${letrasTextoUsuario}".`);*/
-    textoNuevo = letrasTextoUsuario.join("");
-    /*console.log(`y este el texto ya rearmado: "${textoNuevo}"`);*/
+        console.log("este texto no es valido.");
+
+    } else {
+
+        codificacion = textoUsuario.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat");
+        console.log(`este es el texto original: "${textoUsuario}"`);
+        console.log(`este es el texto por sus letras codificado: "${codificacion}"`);
+
+    }
 
     return;
 }
-
-/*function test(){
-
-    alert("hola mundo!");
-
-}*/
 
 condicionesIniciales();
