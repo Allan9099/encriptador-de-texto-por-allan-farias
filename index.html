@@ -21,15 +21,17 @@
                 <div class="cuerpo__seccionUsuario__botonera__botones">
                     <button onclick="logicaEncriptado();" class="cuerpo__seccionUsuario__botonera__botones__boton" id="encriptar">Encriptar</button>
                     <button onclick="logicaDesencriptado();" class="cuerpo__seccionUsuario__botonera__botones__boton" id="desencriptar">Desencriptar</button>
+                    <button onclick="pegarTexto();" class="cuerpo__seccionUsuario__botonera__botones__boton" id="pegar">Pegar</button>
                 </div>
             </div>
         </section>
         <section class="cuerpo__seccionResultado">
-            <img class="cuerpo__seccionResultado__imagen" src="./assets/imagen-encriptador.png" style="display: block;">
-            <h1 class="cuerpo__seccionResultado__resultado"></h1>
+            <img class="cuerpo__seccionResultado__imagen" src="./assets/imagen-encriptador.png" style="display: block;" alt="imagen artistica de un personaje viendo un diamante mal dibujado con una lupa.">
+            <h1 class="cuerpo__seccionResultado__mensaje"></h1>
             <p class="cuerpo__seccionResultado__instruccion">Ingrese el texto que desee encriptar o desencriptar.</p>
+            <textarea readonly type="text" class="cuerpo__seccionResultado__resultado" id="textoResultado"></textarea>
+            <button onclick="copiarTexto();" class="cuerpo__seccionResultado__boton" id="copiar">Copiar</button>
         </section>
-
     </main>
     <script src="app.js"></script>
 </body>
