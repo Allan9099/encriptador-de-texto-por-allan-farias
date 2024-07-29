@@ -35,8 +35,8 @@ function mensajeResultado() {
     copiar.style.display = "none";
     h1.style.display = "block";
     p.style.display = "block";
-    img.style.display = "block";
-
+    window.innerWidth < 1000 ? img.style.display = "none" : img.style.display = "block";
+    
     return;
 
 }
@@ -57,7 +57,7 @@ function limpiar() {
 
 function condicionesIniciales() {
 
-    funcionHTML("h1","Ningun mensaje fue encontrado");
+    funcionHTML("h1","Ningún mensaje fue encontrado");
     mensajeResultado();
     limpiar();
 
