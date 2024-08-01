@@ -35,7 +35,11 @@ function mensajeResultado() {
     copiar.style.display = "none";
     h1.style.display = "block";
     p.style.display = "block";
-    window.innerWidth < 1000 ? img.style.display = "none" : img.style.display = "block";
+    if (window.innerWidth < 1000) {
+        img.style.display = "none";
+    } else { 
+        img.style.display = "block";
+    }
     
     return;
 

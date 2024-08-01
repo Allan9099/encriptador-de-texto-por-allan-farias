@@ -8,29 +8,61 @@
 </head>
 <body>
     <main class="cuerpo">
-        <section class="cuerpo__seccionUsuario">
+        <section class="cuerpo__seccionUsuario"> <!--------------------------------------Seccion Usuarios------------------------------------------->
             <img class="encabezado__logo" src="./assets/Alura-min.png" alt='logo de Alura minimalista, solo la "a"'>
-            <textarea type="text" class="cuerpo__seccionUsuario__texto" id="texto" placeholder="Ingrese el texto aqui"></textarea>
+            <textarea 
+                type="text" 
+                class="cuerpo__seccionUsuario__texto" 
+                id="texto" 
+                placeholder="Ingrese el texto aqui">
+            </textarea> <!--Texto usuario-->
             <div class="cuerpo__seccionUsuario__botonera">
                 <div class="cuerpo__seccionUsuario__botonera__mensaje">
-                    <a class="cuerpo__seccionUsuario__botonera__mensaje__advertencia">
+                    <a 
+                        class="cuerpo__seccionUsuario__botonera__mensaje__advertencia">
                         <img src="./assets/Small-warning.png">
                         Solo letras minúsculas, no acentos, números o símbolos.
                     </a>
                 </div>
                 <div class="cuerpo__seccionUsuario__botonera__botones">
-                    <button onclick="logicaEncriptado();" class="cuerpo__seccionUsuario__botonera__botones__boton" id="encriptar">Encriptar</button>
-                    <button onclick="logicaDesencriptado();" class="cuerpo__seccionUsuario__botonera__botones__boton" id="desencriptar">Desencriptar</button>
-                    <button onclick="pegarTexto();" class="cuerpo__seccionUsuario__botonera__botones__boton" id="pegar">Pegar</button>
+                    <button 
+                        onclick="logicaEncriptado();" 
+                        class="cuerpo__seccionUsuario__botonera__botones__boton" 
+                        id="encriptar"> <!--Boton encriptar-->
+                        Encriptar
+                    </button>
+                    <button 
+                        onclick="logicaDesencriptado();" 
+                        class="cuerpo__seccionUsuario__botonera__botones__boton" 
+                        id="desencriptar"> <!--Boton desencriptar-->
+                        Desencriptar
+                    </button>
+                    <button 
+                        onclick="pegarTexto();" 
+                        class="cuerpo__seccionUsuario__botonera__botones__boton" 
+                        id="pegar"> <!--Boton pegar-->
+                        Pegar
+                    </button>
                 </div>
             </div>
         </section>
-        <section class="cuerpo__seccionResultado">
-            <img class="cuerpo__seccionResultado__imagen" src="./assets/imagen-encriptador.png" style="display: block;" alt="imagen artistica de un personaje viendo un diamante mal dibujado con una lupa.">
+        <section class="cuerpo__seccionResultado"> <!-------------------------------------Seccion Resultado----------------------------------------->
+            <img class="cuerpo__seccionResultado__imagen" src="./assets/imagen-encriptador.png" style="display: block;"
+             alt="imagen artistica de un personaje analizando un diamante mal dibujado con una lupa.">
             <h1 class="cuerpo__seccionResultado__mensaje"></h1>
             <p class="cuerpo__seccionResultado__instruccion">Ingrese el texto que desee encriptar o desencriptar.</p>
-            <textarea readonly type="text" class="cuerpo__seccionResultado__resultado" id="textoResultado"></textarea>
-            <button onclick="copiarTexto();" class="cuerpo__seccionResultado__boton" id="copiar">Copiar</button>
+            <textarea 
+                readonly 
+                type="text" 
+                class="cuerpo__seccionResultado__resultado" 
+                id="textoResultado">
+            </textarea> <!--Texto del resultado-->
+            <button 
+                onclick="copiarTexto();" 
+                class="cuerpo__seccionResultado__boton" 
+                id="copiar"> <!--Boton copiar-->
+                Copiar
+            </button>
         </section>
     </main>
     <script src="app.js"></script>
