@@ -81,7 +81,6 @@ body {
     border: none;
     font-family: var(--fuente-primaria);
     background-color: transparent;
-    box-sizing: border-box;
     font-size: var(--tamaño-fuente-titulos);
     resize: none;
     text-align: left;
@@ -193,6 +192,7 @@ body {
     border-radius: 32px;
     text-align: center;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    justify-content: space-between;
     
 }
 
@@ -206,7 +206,7 @@ body {
 .cuerpo__seccionResultado__instruccion {
 
     color: var(--color-3);
-    padding: 2%;
+    padding: 2% 2% 15% 2%;
 
 }
 
@@ -214,25 +214,39 @@ body {
 
     width: 80%;
     height: auto;
-    padding-top: 45%;
+    padding-top: 40%;
+    display: block;
+
+}
+
+#contenedor__span {
+
+    width: 100%;
+    padding: 20px 0;
 
 }
 
 .cuerpo__seccionResultado__resultado {
-
-    margin: 8%;
-    width: 100%;
-    height: 100%;                             /*Punto actual: Como hacer que el text area y la pagina y cualquier otra*/
-    border: none;                             /*cosa se estire abajo con el texto para la version mobil.  29/07/2024  */
+                                                        
     background-color: transparent;
-    box-sizing: border-box;
-    font-size: var(--tamaño-fuente-parrafos);
-    font-family: var(--fuente-primaria);
-    resize: none;
     text-align: left;
     color: var(--color-3);
+    font-size: var(--tamaño-fuente-parrafos);
+    font-family: var(--fuente-primaria);
+    display: block;
+    overflow-y: auto;
+    resize: none;
+    height: 400px;
+    max-width: 310px;
+    line-height: 20px;
+    word-wrap: break-word;
     
 }
+
+.cuerpo__seccionResultado__resultado[contenteditable]:empty::before {
+    content: "Ingrese el texto aqui";
+    color: gray;
+  }
 
 .cuerpo__seccionResultado__resultado:focus {
 
@@ -270,7 +284,6 @@ body {
         display: flex;
         flex-direction: column;
         height: 100%;
-        flex: 1;
     
     }
 
@@ -278,7 +291,6 @@ body {
 
         display: flex;
         flex-direction: column;
-        flex: 1;
         height: 100vh;
 
     }
@@ -292,7 +304,7 @@ body {
 
     .cuerpo__seccionUsuario {
 
-        padding: 25% 0% 0% 0%;
+        padding: 35% 0% 0% 0%;
         width: 100%;
         gap: 35px;
         height: auto;
@@ -302,19 +314,16 @@ body {
     .cuerpo__seccionUsuario__texto{
 
         width: 100%;
-        min-height: 600px;
-        resize: none;
+        min-height: 500px;
     
     }
 
     .cuerpo__seccionResultado {
 
         width: 96%;
-        height: auto;
-        flex: 1;
         justify-content: center;
-        margin-bottom: 5%;
-        
+        height: auto;
+
     }
     
     .cuerpo__seccionResultado__imagen{
@@ -323,31 +332,46 @@ body {
 
     }
 
+    #contenedor__span {
+
+        width: 90%;
+        padding: 20px 90px;
+    
+    }
+
     .cuerpo__seccionResultado__resultado {
 
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        height: 100%;
-        border: black solid; /* para ver como se comporta el text area en la pagina */
+        height: auto;
+        overflow-y: visible;
+        max-width: 100%;
 
     }
 
     .cuerpo__seccionResultado__mensaje {
 
-        padding: 5% 0 0 0;
+        padding: 5% 0 2% 0;
     
     }
     
     .cuerpo__seccionResultado__instruccion {
     
-        padding: 0 0 5% 0;
+        padding: 0;
     
     }
 
     .cuerpo__seccionResultado__boton {
 
-        margin: 0 0 5% 0;
+        margin: 2% 0 5% 0;
+
+    }
+
+    #marginObligado {
+
+        border-top: 1px transparent solid;
+        width: auto;
+        justify-self: start;
+        position: relative;
+        bottom: 1%;
 
     }
     

@@ -23,7 +23,11 @@ function resultado() {
     copiar.style.display = "block";
     h1.style.display = "none";
     p.style.display = "none";
-    img.style.display = "none";
+    if (window.innerWidth < 1000) {
+        img.removeAttribute("style");
+    } else {
+        img.style.display = "none";
+    }
     copiar.innerHTML = "Copiar"
     return;
 
@@ -36,9 +40,10 @@ function mensajeResultado() {
     h1.style.display = "block";
     p.style.display = "block";
     if (window.innerWidth < 1000) {
-        img.style.display = "none";
+        img.removeAttribute("style");
     } else { 
         img.style.display = "block";
+        img.removeAttribute("style");
     }
     
     return;
@@ -112,7 +117,7 @@ function logicaDesencriptado() {
 
 function copiarTexto() {
 
-    textoCopiable = textoResultado.value;
+    textoCopiable = textoResultado.innerHTML;
     navigator.clipboard.writeText(textoCopiable);
     copiar.innerHTML = "Copiado";
 

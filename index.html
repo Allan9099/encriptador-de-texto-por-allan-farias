@@ -14,8 +14,7 @@
                 type="text" 
                 class="cuerpo__seccionUsuario__texto" 
                 id="texto" 
-                placeholder="Ingrese el texto aqui">
-            </textarea> <!--Texto usuario-->
+                placeholder="Ingrese el texto aqui"></textarea> <!--Texto usuario-->
             <div class="cuerpo__seccionUsuario__botonera">
                 <div class="cuerpo__seccionUsuario__botonera__mensaje">
                     <a 
@@ -47,23 +46,26 @@
             </div>
         </section>
         <section class="cuerpo__seccionResultado"> <!-------------------------------------Seccion Resultado----------------------------------------->
-            <img class="cuerpo__seccionResultado__imagen" src="./assets/imagen-encriptador.png" style="display: block;"
-             alt="imagen artistica de un personaje analizando un diamante mal dibujado con una lupa.">
+            <img class="cuerpo__seccionResultado__imagen" src="./assets/imagen-encriptador.png" 
+            alt="imagen artistica de un personaje analizando un diamante mal dibujado con una lupa.">
             <h1 class="cuerpo__seccionResultado__mensaje"></h1>
             <p class="cuerpo__seccionResultado__instruccion">Ingrese el texto que desee encriptar o desencriptar.</p>
-            <textarea 
-                readonly 
-                type="text" 
-                class="cuerpo__seccionResultado__resultado" 
-                id="textoResultado">
-            </textarea> <!--Texto del resultado-->
+
+            <p id="contenedor__span"><span 
+                class="cuerpo__seccionResultado__resultado"
+                id="textoResultado"
+                role="textbox"
+                contenteditable="false">
+            </span></p>
+
             <button 
                 onclick="copiarTexto();" 
-                class="cuerpo__seccionResultado__boton" 
+                class="cuerpo__seccionResultado__boton"
                 id="copiar"> <!--Boton copiar-->
                 Copiar
             </button>
         </section>
+        <div id="marginObligado"></div>
     </main>
     <script src="app.js"></script>
 </body>
