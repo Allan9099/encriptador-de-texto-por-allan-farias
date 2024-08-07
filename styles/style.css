@@ -376,3 +376,26 @@ body {
     }
     
 }
+
+@media (max-width: 500px) {
+
+    .cuerpo__seccionUsuario__botonera__botones {
+
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .cuerpo__seccionUsuario__botonera__botones__boton, #pegar {
+
+        width: 100%;
+    
+    }
+
+    #contenedor__span {
+
+        padding: 20px 0;
+
+    }
+
+}
